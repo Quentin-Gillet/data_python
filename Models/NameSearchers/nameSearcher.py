@@ -24,7 +24,7 @@ class NameSearcher:
             return 'Invalid search type'
 
     def getNamesClassData(self):
-        csvReader = CSVReader('/Volumes/DISQUE2/quentindev/data_python/DataFiles/nat2018.csv', self.app)
+        csvReader = CSVReader('G:/Dev files/data_python_v2/DataFiles/nat2018.csv', self.app)
         self.nameClasses = csvReader.getNameClassData()
 
     def searchWithName(self, name, options=None):

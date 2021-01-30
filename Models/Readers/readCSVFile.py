@@ -21,7 +21,7 @@ class CSVReader(Reader):
             self.progressBar = self.app.searchProgressBar
 
         # Load CSV file
-        with open(self.file) as csv_file:
+        with open(self.file, 'r', encoding='utf8', errors='ignore') as csv_file:
             # Read CSV file
             csv_reader = csv.reader(csv_file, delimiter=';')
             lineCount = 0
